@@ -82,7 +82,9 @@ BEGIN
     BEGIN
         IF @UserId IS NULL OR @ProductId IS NULL OR @Quantity IS NULL
         BEGIN
-            SELECT '0' AS 'code', 'Faltan parámetros para crear la orden' AS 'message'
+            SELECT 
+            '0' AS 'code', 
+            'Faltan parámetros para crear la orden' AS 'message'
             RETURN
         END
 

@@ -11,6 +11,7 @@ builder.Services.AddControllers();
 
 // Register the repository so we can inject it into the controller
 builder.Services.AddScoped<backend_II.Database.ProductRepository>();
+builder.Services.AddScoped<backend_II.Services.ProductsServices>();
 
 var app = builder.Build();
 
